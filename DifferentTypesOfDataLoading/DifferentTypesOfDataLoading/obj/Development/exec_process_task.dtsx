@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="8/22/2022 3:10:46 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="TGU1DELL0139"
+  DTS:CreatorName="TECHIGAI\ashok.murukutla"
+  DTS:DTSID="{25C3B5C0-A4AB-4FF0-AE7A-00EA493E9166}"
+  DTS:EnableConfig="True"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.694.0"
+  DTS:LocaleID="16393"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="29"
+  DTS:VersionGUID="{7694CA7F-32E5-463F-817A-759830D4B443}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[azure-exec.database.windows.net.SSISDB.Admin1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{8A29475D-7221-40D0-816B-48812B1F5E6D}"
+      DTS:ObjectName="azure-exec.database.windows.net.SSISDB.Admin1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=azure-exec.database.windows.net;User ID=Admin1;Initial Catalog=SSISDB;Provider=SQLNCLI11.1;Application Name=SSIS-Package1-{8A29475D-7221-40D0-816B-48812B1F5E6D}azure-exec.database.windows.net.SSISDB.Admin1;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAQN9LFfm/EkOanc0jovDo9gAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAAIosZFRQ/kaf84/eTD8XaAAAAAASAAACgAAAAEAAAAODbMbUXO48qxW9f5mclTMgYAAAAunf5voIPPyi4zAFkGmbqMrXKlucBzfRqFAAAAM91wV2P+9FQWtCgPZc6aASA9ozl</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Execute Process Task"
+      DTS:CreationName="Microsoft.ExecuteProcess"
+      DTS:Description="Execute Process Task"
+      DTS:DTSID="{11044A34-9B41-47F7-8AA3-5BB622B78D2F}"
+      DTS:ExecutableType="Microsoft.ExecuteProcess"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute Process Task"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ExecuteProcessData
+          Executable="PowerShell.exe"
+          Arguments="powershell -ExecutionPolicy Bypass -File E:\POC\DifferentTypesOfDataLoading\install.ps1"
+          ExecuteOnProxy="True" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="181.6,41.6"
+          Id="Package\Execute Process Task"
+          TopLeft="411.666650308504,126.53333433893" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

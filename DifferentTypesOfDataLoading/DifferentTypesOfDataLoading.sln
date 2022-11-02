@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32630.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "DifferentTypesOfDataLoading", "DifferentTypesOfDataLoading\DifferentTypesOfDataLoading.dtproj", "{1A7B4F6E-3905-49D6-B25B-CDE7A004CCC6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1A7B4F6E-3905-49D6-B25B-CDE7A004CCC6}.Development|Default.ActiveCfg = Development
+		{1A7B4F6E-3905-49D6-B25B-CDE7A004CCC6}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3D6388EF-43E2-4A37-8E16-94198966A390}
+	EndGlobalSection
+EndGlobal

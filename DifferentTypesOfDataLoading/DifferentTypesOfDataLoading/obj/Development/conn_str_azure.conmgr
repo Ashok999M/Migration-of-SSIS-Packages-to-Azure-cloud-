@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="conn_str_azure"
+  DTS:DTSID="{1EDD71C0-1921-429D-97CC-E0956B649B21}"
+  DTS:CreationName="OLEDB">
+  <DTS:PropertyExpression
+    DTS:Name="ConnectByProxy">@[$Project::Conn_str_azure_ConnectByProxy]</DTS:PropertyExpression>
+  <DTS:PropertyExpression
+    DTS:Name="InitialCatalog">@[$Project::Dbase]</DTS:PropertyExpression>
+  <DTS:PropertyExpression
+    DTS:Name="Password">@[$Project::Password]</DTS:PropertyExpression>
+  <DTS:PropertyExpression
+    DTS:Name="ServerName">@[$Project::Conn_str_azure_ServerName]</DTS:PropertyExpression>
+  <DTS:PropertyExpression
+    DTS:Name="UserName">@[$Project::UserName]</DTS:PropertyExpression>
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=azuressispocsql.database.windows.net;User ID=poc;Initial Catalog=adf;Provider=SQLNCLI11.1;Application Name=SSIS-Package-{1EDD71C0-1921-429D-97CC-E0956B649B21}adf-poc-server.database.windows.net.adf.harsh;Auto Translate=False;"
+      DTS:ConnectByProxy="True">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAQN9LFfm/EkOanc0jovDo9gAAAAACAAAAAAADZgAAwAAAABAAAADPkLvgOrDZxsl4DuH+1tF7AAAAAASAAACgAAAAEAAAAA3ooLt3+RR3bO4ws95LWJl4AAAA21aKMfHHvzaRd6fK8MKoDdUr+gjDK0QWdiS2aZhavgjaKAATMjPlGcZnawPvOjMcZJ7EsgSyAyqOXAruyFWJIlZzO8jKTxqEUVDBoEdcauISwoe6x2+Y/wr2TNodeSJ52aI3fKeb58McdHoVT9wzXuoUqz8d3b8HFAAAAJmZi6YIgCrkX4wSdY5x4JkoO0yI</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

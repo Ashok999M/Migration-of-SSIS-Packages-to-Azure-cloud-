@@ -1,0 +1,22 @@
+project  -  Conn_str_azure_ConnectByProxy  - True
+project  -  Conn_str_azure_ServerName      -  adf-poc-server.database.windows.net
+project  -  Dbase			   -  adf
+project  -  Password			   -  Dbase@1234
+project  -  UserName			   -  harsh
+
+
+
+package (onPremDbToAzureDb)  -  Dbase  -  adfSsisPoc
+package  -  OnPrem_db_conn_Password  -  Dbase@123
+package  -  OnPrem_db_conn_ServerName  -  TGU1DELL0139
+package  -  OnPrem_db_conn_UserName  -  sa
+
+
+package (onPremCsvToAzure)  -  Conn_str_azure_ConnectByProxy  -  True
+package  -   Conn_str_azure_ServerName  -  adf-poc-server.database.windows.net
+package  -  Dbase  -  adf
+package  -  Password  -  Dbase@1234
+package  -  UserName  -  harsh
+
+
+for azureToAzure - project parameters
