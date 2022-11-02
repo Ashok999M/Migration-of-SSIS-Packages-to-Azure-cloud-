@@ -1,0 +1,6 @@
+selected resource name:		onPremDataLoadSSIS
+selected resource type:		pipeline
+factory name:			Adfpoc-autoloading
+factory location:		eastus
+subscription id:		bff764d9-e47f-41eb-b5a7-fe849aae07e3
+time of download (UTC):		Thu, 11 Aug 2022 11:18:53 GMT
